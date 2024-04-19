@@ -1,37 +1,15 @@
-<!DOCTYPE html>
-<html lang="de">
-  <head>
-    <style>
-      a {
-        padding: 8px 16px;
+{% extends "master.html" %}
+<!---->
+{% block title %} Members List {% endblock %}
+<!---->
+{% block content %}
+<h1>Members</h1>
 
-        border: 2px solid grey;
-        border-radius: 6px;
-
-        text-decoration: none;
-        font-size: 18px;
-      }
-
-      ul {
-        padding: 0;
-      }
-
-      li {
-        list-style-type: none;
-        height: 44px;
-      }
-    </style>
-  </head>
-
-  <body>
-    <h1>Members</h1>
-
-    <ul>
-      {% for x in mymembers %}
-      <li>
-        <a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </body>
-</html>
+<ul>
+  {% for x in mymembers %}
+  <li>
+    <a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} {% endblock %}</title>
+    <style>
+      a {
+        padding: 8px 16px;
+
+        border: 2px solid grey;
+        border-radius: 6px;
+
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        list-style-type: none;
+        height: 44px;
+      }
+    </style>
+  </head>
+  <body>
+    {% block content %} {% endblock %}
+  </body>
+</html>
