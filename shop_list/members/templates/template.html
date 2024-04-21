@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <title>Template</title>
-
+<style>
+    body {
+        margin: 0;
+    }
+</style>
   <body>
     <h1>Test Page</h1>
 
@@ -12,6 +16,7 @@
     <p>{{ x.joined_date }}</p>
     {% endfor %} 
     
+    {# show the fruit #}
     {% if 'Banana' in fruits %}
     <h1>BA NA NA</h1>
     {% else %}
@@ -22,5 +27,7 @@
     {% for x in mymembers %}
     <li>{{ x.firstname }}</li>
     {% endfor %}
+
+    {% include 'footer.html' %}
   </body>
 </html>
