@@ -9,6 +9,8 @@
   <body>
     <h1>Test Page</h1>
 
+    {% include 'menu.html' with me='Mario' %}
+
     {% for x in mymembers %}
     <h1>{{ x.firstname }}</h1>
     <p>{{ x.lastname }}</p>
