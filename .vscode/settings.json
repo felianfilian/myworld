@@ -1,5 +1,8 @@
 {
   "emmet.includeLanguages": {
     "django-html": "html"
+  },
+  "[django-html]": {
+    "editor.formatOnSave": false
   }
 }
