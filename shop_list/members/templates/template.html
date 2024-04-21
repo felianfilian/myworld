@@ -7,6 +7,10 @@
 
     {% for x in mymembers %}
     <h1>{{ x.firstname }}</h1>
-    {% endfor %}
+    {% endfor %} {% if greeting == 1 %}
+    <h1>Hello</h1>
+    {% else %}
+    <h1>Bye</h1>
+    {% endif %}
   </body>
 </html>
