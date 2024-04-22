@@ -15,10 +15,11 @@
     {% include 'menu.html' with me='Mario' %}
 
     {% for x in mymembers reversed %}
-    <h1>{{ forloop.counter }}. {{ x.firstname }}</h1>
+    <p>{{ x }}</p>
+    {% comment %} <h1>{{ forloop.counter }}. {{ x.firstname }}</h1>
     <p>{{ x.lastname }}</p>
     <p>{{ x.phones }}</p>
-    <p>{{ x.joined_date }}</p>
+    <p>{{ x.joined_date }}</p> {% endcomment %}
     {% endfor %} 
     
     {# show the fruit #}
