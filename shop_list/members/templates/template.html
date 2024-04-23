@@ -14,7 +14,7 @@
 
     {% include 'menu.html' with me='Mario' %}
 
-    {% for x in mymembers reversed %}
+    {% for x in mymembers %}
     <h1>{{ forloop.counter }}. {{ x.firstname }}</h1>
     <p>{{ x.lastname }}</p>
     <p>{{ x.phones }}</p>
