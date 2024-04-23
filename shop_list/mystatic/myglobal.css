@@ -38,6 +38,9 @@ li {
 }
 
 .member-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 600px;
 
   margin: 0;
@@ -47,5 +50,9 @@ li {
 }
 
 .members-title {
+  width: 100%;
+
   background-color: #5e6df9;
+  color: #fff;
+  text-align: center;
 }
