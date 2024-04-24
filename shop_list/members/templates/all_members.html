@@ -1,28 +1,17 @@
 {% extends "master.html" %}
-<!---->
-{% block title %} Members List {% endblock %}
-<!---->
+
+{% block title %}
+  My Tennis Club - List of all members
+{% endblock %}
+
+
 {% block content %}
-
-<nav class="main-nav"> 
-  <p><a href="/">HOME</a></p>
-</nav>
-
-
-<div class="main-content">
-  <div class="member-container">
-    <h1 class="members-title">Members</h1>
-  
+  <div class="mycard">
+    <h1>Members</h1>
     <ul>
       {% for x in mymembers %}
-      <li>
-        <a class="btn-member" href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a>
-      </li>
+        <li onclick="window.location = 'details/{{ x.id }}'">{{ x.firstname }} {{ x.lastname }}</li>
       {% endfor %}
     </ul>
   </div>
-  
-</div>
-
-
 {% endblock %}
